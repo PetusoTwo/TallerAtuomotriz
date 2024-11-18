@@ -1,0 +1,191 @@
+.carousel-inner img {
+    height: 600px; /* Ajusta la altura del slider */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+  }
+
+  .radio{
+    border-radius: 30px;
+  }
+
+  .card {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento */
+  }
+  
+  .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+  }
+  
+  .card:hover .hover-overlay {
+    opacity: 1;
+  }
+  
+  .hover-text button {
+    margin-top: 10px;
+  }
+  
+
+.footer {
+  background-color: #003366; /* Color azul oscuro */
+}
+.footer .text-body-emphasis {
+  color: #d3d3d3;
+}
+.footer h5 {
+  color: #ffffff;
+  font-weight: bold;
+}
+.footer ul {
+  color: #ffffff;
+}
+.footer .bi {
+  color: #00cc66;
+}
+.footer p, .footer li {
+  font-size: 0.9rem;
+}
+
+.service-card {
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card .icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.service-card .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-card .description {
+  font-size: 1rem;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.service-card:hover .description {
+  opacity: 1;
+  max-height: 200px; /* Ajusta este valor según la altura del contenido */
+}
+
+
+    /* Estilo para las tarjetas de categoría */
+    .category-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid #e0e0e0;
+    }
+    
+    .category-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .category-link {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .category-link:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    /* Responsive: Ajustar el tamaño de las tarjetas en dispositivos más pequeños */
+    @media (max-width: 768px) {
+        .category-card {
+            margin-bottom: 20px;
+        }
+    }
+
+    /* Estilos para la sección de cotización */
+        /* Estilo para las tarjetas de categoría */
+        .category-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Estilo para los botones de cotización */
+        .category-link {
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: 2px solid transparent;
+        }
+    
+        /* Colores de los botones según la categoría */
+        .category-link:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    
+        .category-link:focus {
+            background-color: #0056b3;
+            border-color: #0056b3;
+            color: white;
+        }
+    
+        /* Colores específicos para cada categoría */
+        .btn-cotizar {
+            border: 2px solid #007bff;
+            color: #007bff;
+        }
+    
+        .category-card h4 {
+            font-weight: 700;
+        }
+    
+        /* Responsive: Ajustar el tamaño de las tarjetas en dispositivos más pequeños */
+        @media (max-width: 768px) {
+            .category-card {
+                margin-bottom: 20px;
+            }
+        }
+    
+        /* Fondo general */
+        body {
+            background-color: #f4f7fb;
+        }
+    
