@@ -161,7 +161,7 @@ try {
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-sm rounded border-light">
                         <!-- Imagen del repuesto -->
-                        <img src="<?php echo htmlspecialchars($repuesto['imagen_url']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($repuesto['nombre']); ?>" style="height: 200px; object-fit: cover;">
+                        <img src="<?php echo htmlspecialchars($repuesto['imgaen_url']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($repuesto['nombre']); ?>" style="height: 200px; object-fit: cover;">
                         
                         <div class="card-body text-center">
                             <!-- Título del repuesto -->
